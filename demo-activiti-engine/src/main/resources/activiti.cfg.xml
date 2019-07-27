@@ -5,7 +5,7 @@
 
     <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
 
-        <property name="jdbcUrl" value="jdbc:mysql://47.98.141.146:3306/activiti5_home" />
+        <property name="jdbcUrl" value="jdbc:mysql://47.98.141.146:3306/activiti5_home?useUnicode=true&amp;characterEncoding=utf8" />
         <property name="jdbcDriver" value="com.mysql.jdbc.Driver" />
         <property name="jdbcUsername" value="root" />
         <property name="jdbcPassword" value="7uji9olp-" />
