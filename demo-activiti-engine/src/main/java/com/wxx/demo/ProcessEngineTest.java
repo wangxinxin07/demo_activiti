@@ -7,6 +7,7 @@ import org.activiti.engine.repository.DeploymentBuilder;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,25 +27,29 @@ public class ProcessEngineTest {
     public static void main(String[] args) {
 
 //        String processKey = "hrParam";
-        //1.启动流程
+//        //1.启动流程
 //        Map<String, Object> params = new HashMap<String, Object>();
 //        params.put("u1", "zhangsan");
-//        params.put("day", 1);
+//        params.put("day", 10);
 //        startProcess(processKey, params);
 
-        String sn = "42501";
-        //2.获取流程当前审批人 流程ID：42501
+        String sn = "20190730171111413330790776558946";
+//        2.获取流程当前审批人 流程ID：42501
 //        getTaskListBySn(sn);
 
         //3.直属上级审批
-//        approve(sn);
+//        Map<String, Object> params = new HashMap<String, Object>();
+//        params.put("u2", Arrays.asList("hudp"));
+//        approve(sn,params);
 
         //4.获取流程当前审批人
 //        getTaskListBySn(sn);
 
+        //5.部门经理审批
+//        approve(sn);
 
-        ProcessEngine processEngine = createDefault();
-
+        //6.获取流程当前审批人
+//        getTaskListBySn(sn);
 
     }
 
